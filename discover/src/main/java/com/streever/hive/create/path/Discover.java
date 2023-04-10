@@ -17,7 +17,7 @@ public class Discover {
         String driver_class = "org.apache.hive.jdbc.HiveDriver";
         String url = "jdbc:hive2://s03.streever.local:8443/;ssl=true;transportMode=http;httpPath=gateway/cdp-proxy-api/hive;sslTrustStore=/Users/dstreev/bin/certs/gateway-client-trust.jks;trustStorePassword=changeit";
         String username = "dstreev";
-        String password = "judge-abnormal-precede";
+        String password = args[0];
         String db="z_create_path_validation";
 
         List<Boolean> booleans = new ArrayList<>(
